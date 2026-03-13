@@ -3,13 +3,12 @@
 import { motion } from "framer-motion";
 import VideoCard from "@/components/cards/video-card";
 
-// TODO: Substituir pelos videoIds dos vídeos verticais reais
 const portfolioItems = [
-  { videoId: "_ItjCZcLn0A", title: "Transformação de Sorrisos",  category: "Odontologia" },
   { videoId: "ioIIUaGiIZU", title: "Estética de Alto Padrão",    category: "Estética" },
   { videoId: "9vtaSqxPPzo", title: "Gastronomia e Experiência",  category: "Culinária" },
   { videoId: "DMSEvjhdres", title: "Conexão e Storytelling",     category: "Sentimental" },
   { videoId: "SMF9U0yLbvM", title: "Estratégia e Vendas",        category: "Infoprodutor" },
+  { videoId: "apTyLZkJb_g", title: "Transformação de Sorrisos",  category: "Odontologia" },
 ];
 
 export default function PortfolioSection() {

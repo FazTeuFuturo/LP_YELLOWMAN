@@ -4,23 +4,21 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, Play, X } from "lucide-react";
 
-// TODO: Substituir pelos videoIds dos depoimentos verticais reais
 const testimonials = [
   {
-    videoId: "PLACEHOLDER_1", // TODO: cole aqui o videoId do YouTube
+    videoId: "oOr5iTeD5f0",
     name: "Fabi",
     brand: "Infoprodutora",
     result: "Lançou o 1º curso e vendeu na primeira semana",
     stars: 5,
   },
   {
-    videoId: "PLACEHOLDER_2", // TODO: cole aqui o videoId do YouTube
+    videoId: "GEWSO8PbRcw",
     name: "Marcelo",
     brand: "Corcel Mágico",
     result: "Triplicou o engajamento da banda nas redes",
     stars: 5,
   },
-  // TODO: adicione mais depoimentos seguindo o mesmo formato
 ];
 
 function Card({ t, index }: { t: (typeof testimonials)[0]; index: number }) {
