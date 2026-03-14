@@ -125,19 +125,7 @@ export default function HeroSection() {
             </a>
           </motion.div>
 
-          {/* Stats */}
-          <motion.div {...fadeUp(1.05)} className="flex flex-wrap gap-10 sm:gap-14">
-            {[
-              { v: "5000+", l: "Vídeos Editados" },
-              { v: "72h", l: "Entrega Garantida" },
-              { v: "4.9★", l: "Avaliação Média" },
-            ].map((s, i) => (
-              <div key={s.l} className={`flex flex-col gap-1 ${i > 0 ? "relative before:absolute before:-left-5 sm:before:-left-7 before:top-1/2 before:-translate-y-1/2 before:h-8 before:w-px before:bg-border/50" : ""}`}>
-                <span className="font-display text-3xl text-primary leading-none">{s.v}</span>
-                <span className="font-heading text-[0.6rem] tracking-[0.3em] text-muted-foreground uppercase">{s.l}</span>
-              </div>
-            ))}
-          </motion.div>
+
         </div>
       </div>
 

@@ -52,9 +52,9 @@ export default function VideoCard({ videoId, title, category }: VideoCardProps) 
           <div className="absolute top-3 right-3 w-4 h-4 border-t border-r border-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
           {/* Info overlay */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-            <p className="section-label mb-1 opacity-80">{category}</p>
-            <h3 className="font-display italic font-400 text-white text-xl leading-tight group-hover:text-primary transition-colors duration-300">
+          <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            <p className="font-heading text-[0.55rem] sm:section-label mb-1 opacity-80 uppercase tracking-widest">{category}</p>
+            <h3 className="font-display italic font-400 text-white text-lg sm:text-xl leading-tight group-hover:text-primary transition-colors duration-300">
               {title}
             </h3>
           </div>
