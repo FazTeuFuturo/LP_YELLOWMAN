@@ -19,7 +19,7 @@ export default function VideoCard({ videoId, title, category }: VideoCardProps) 
   };
 
   const id = getCleanID(videoId);
-  const thumb = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
+  const thumb = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
 
   return (
     <>

@@ -26,7 +26,7 @@ function Card({ t, index }: { t: (typeof testimonials)[0]; index: number }) {
   const isPlaceholder = t.videoId.startsWith("PLACEHOLDER");
   const thumb = isPlaceholder
     ? null
-    : `https://img.youtube.com/vi/${t.videoId}/maxresdefault.jpg`;
+    : `https://img.youtube.com/vi/${t.videoId}/hqdefault.jpg`;
 
   return (
     <>
