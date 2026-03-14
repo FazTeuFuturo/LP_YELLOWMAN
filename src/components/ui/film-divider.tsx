@@ -8,7 +8,7 @@ const segments = [
   "REELS",
   "SHORTS",
   "DESDE 2014",
-  "500+ VÍDEOS",
+  "5000+ VÍDEOS",
 ];
 
 export default function FilmDivider({ reverse = false }: { reverse?: boolean }) {

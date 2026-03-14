@@ -69,18 +69,18 @@ export default function HeroSection() {
               className="font-display leading-[0.92] tracking-tight"
               style={{ fontSize: "clamp(3.5rem, 10vw, 9rem)" }}
             >
-              <span className="block text-foreground">Grava agora.</span>
-              <span className="block text-foreground">A gente faz</span>
+              <span className="block text-foreground">Tu cria.</span>
+              <span className="block text-foreground">A gente te</span>
               <span className="block">
-                <span className="text-foreground">tu </span>
+                <span className="text-foreground">faz </span>
                 <span className="text-primary">
                   <WordRotate
-                    words={["brilhar.", "vender mais.", "escalar.", "dominar."]}
+                    words={["crescer.", "vender.", "lucrar.", "faturar.", "escalar."]}
                     className="inline-block text-primary"
                     framerProps={{
                       initial: { opacity: 0, y: -16 },
                       animate: { opacity: 1, y: 0 },
-                      exit:    { opacity: 0, y: 16 },
+                      exit: { opacity: 0, y: 16 },
                       transition: { duration: 0.45, ease: "easeInOut" },
                     }}
                   />
@@ -128,8 +128,8 @@ export default function HeroSection() {
           {/* Stats */}
           <motion.div {...fadeUp(1.05)} className="flex flex-wrap gap-10 sm:gap-14">
             {[
-              { v: "500+", l: "Vídeos Editados" },
-              { v: "72h",  l: "Entrega Garantida" },
+              { v: "5000+", l: "Vídeos Editados" },
+              { v: "72h", l: "Entrega Garantida" },
               { v: "4.9★", l: "Avaliação Média" },
             ].map((s, i) => (
               <div key={s.l} className={`flex flex-col gap-1 ${i > 0 ? "relative before:absolute before:-left-5 sm:before:-left-7 before:top-1/2 before:-translate-y-1/2 before:h-8 before:w-px before:bg-border/50" : ""}`}>

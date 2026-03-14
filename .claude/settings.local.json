@@ -1,4 +1,15 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(cd \"G:/SaaS/LP_YELLOWMAN\" && npm run build 2>&1 | tail -40)",
+      "Bash(cd \"G:/SaaS/LP_YELLOWMAN\" && npm run build 2>&1 | tail -30)",
+      "Bash(cd \"G:/SaaS/LP_YELLOWMAN\" && npm run build 2>&1 | tail -20)",
+      "Bash(cd \"G:/SaaS/LP_YELLOWMAN/src/components/sections\" && sed -i 's/font-display italic font-300/font-display font-400/g; s/font-display italic font-400/font-display font-400/g; s/font-display italic/font-display/g' faq.tsx footer.tsx niches.tsx portfolio.tsx pricing.tsx process.tsx stats.tsx testimonials.tsx)",
+      "Bash(cd \"G:/SaaS/LP_YELLOWMAN\" && npm run build 2>&1 | tail -15)",
+      "Bash(cd \"G:/SaaS/LP_YELLOWMAN\" && npm run build 2>&1 | grep -E \"error|Error|✓|Route\" | head -10)",
+      "Bash(cd \"G:/SaaS/LP_YELLOWMAN\" && npm run build 2>&1 | grep -E \"error|Error|✓|Route\" | head -8)"
+    ]
+  },
   "hooks": {
     "UserPromptSubmit": [
       {

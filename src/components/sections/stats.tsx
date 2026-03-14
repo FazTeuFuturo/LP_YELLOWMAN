@@ -4,24 +4,24 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 const stats = [
-  { value: 500,  suffix: "+",  label: "Vídeos Editados",   sub: "Projetos entregues" },
-  { value: 72,   suffix: "h",  label: "Entrega Garantida", sub: "Prazo máximo" },
-  { value: 4.9,  suffix: "★",  label: "Avaliação Média",   sub: "Clientes parceiros" },
-  { value: 10,   suffix: "+",  label: "Anos de Mercado",   sub: "Desde 2014" },
+  { value: 5000, suffix: "+", label: "Vídeos Editados", sub: "Projetos entregues" },
+  { value: 72, suffix: "h", label: "Entrega Garantida", sub: "Prazo máximo" },
+  { value: 4.9, suffix: "★", label: "Avaliação Média", sub: "Clientes parceiros" },
+  { value: 10, suffix: "+", label: "Anos de Mercado", sub: "Desde 2014" },
 ];
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
   const [count, setCount] = useState(0);
-  const ref    = useRef<HTMLSpanElement>(null);
+  const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
   const isDecimal = value % 1 !== 0;
 
   useEffect(() => {
     if (!inView) return;
     const steps = 60;
-    const inc   = value / steps;
-    let cur     = 0;
-    const t     = setInterval(() => {
+    const inc = value / steps;
+    let cur = 0;
+    const t = setInterval(() => {
       cur += inc;
       if (cur >= value) { setCount(value); clearInterval(t); }
       else setCount(isDecimal ? Math.round(cur * 10) / 10 : Math.floor(cur));
@@ -52,9 +52,8 @@ export default function StatsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className={`flex flex-col gap-2 py-10 px-6 text-center relative ${
-                i < 3 ? "md:border-r border-border/25" : ""
-              } ${i < 2 ? "border-r border-border/25 md:border-r-0" : ""}`}
+              className={`flex flex-col gap-2 py-10 px-6 text-center relative ${i < 3 ? "md:border-r border-border/25" : ""
+                } ${i < 2 ? "border-r border-border/25 md:border-r-0" : ""}`}
             >
               <Counter value={s.value} suffix={s.suffix} />
               <span className="font-heading font-700 text-sm tracking-[0.1em] uppercase text-foreground mt-1">

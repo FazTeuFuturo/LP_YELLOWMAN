@@ -7,7 +7,7 @@ const steps = [
   {
     num: "01",
     icon: Camera,
-    title: "Grava agora",
+    title: "Gravar",
     description:
       "Siga nossas orientações de roteiro ou grave livremente. Em 10 minutos você resolve sua parte.",
     tag: "Sua única tarefa",
@@ -23,7 +23,7 @@ const steps = [
   {
     num: "03",
     icon: Sparkles,
-    title: "Tu brilhas",
+    title: "Tu Posta",
     description:
       "Receba seu vídeo pronto para postar. Mais autoridade, engajamento e muito mais vendas.",
     tag: "Resultado garantido",

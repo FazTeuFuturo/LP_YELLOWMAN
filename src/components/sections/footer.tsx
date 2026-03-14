@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const links = [
-  { href: "#portfolio",    label: "Portfólio" },
+  { href: "#portfolio", label: "Portfólio" },
   { href: "#testimonials", label: "Depoimentos" },
-  { href: "#pricing",      label: "Planos" },
-  { href: "https://instagram.com/yellowman", label: "Instagram", external: true },
+  { href: "#pricing", label: "Planos" },
+  { href: "https://instagram.com/fazteufuturo", label: "Instagram", external: true },
 ];
 
 export default function Footer() {
@@ -24,8 +24,8 @@ export default function Footer() {
               className="font-display font-400 text-foreground leading-[0.9]"
               style={{ fontSize: "clamp(2.5rem, 5vw, 5rem)" }}
             >
-              Bora gravar?<br />
-              <span className="text-primary">Comece a brilhar.</span>
+              Bora editar?<br />
+              <span className="text-primary">Comece agora.</span>
             </h2>
           </div>
 

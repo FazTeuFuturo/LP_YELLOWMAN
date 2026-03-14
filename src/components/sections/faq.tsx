@@ -20,15 +20,11 @@ const faqs = [
     answer:
       "Sim! Cada vídeo inclui até 2 rodadas de revisões gratuitas para garantir que o resultado final esteja exatamente como você imaginou.",
   },
-  {
-    question: "Vocês fazem as capas (thumbnails)?",
-    answer:
-      "No plano Scale, incluímos a criação de capas para Reels/Instagram. No plano Essential, o foco é 100% na edição do vídeo.",
-  },
+
   {
     question: "Qual a duração máxima dos vídeos brutos?",
     answer:
-      "Para o formato de Reels/Shorts, recomendamos que o bruto tenha até 5 minutos. Isso nos permite extrair o melhor conteúdo para um vídeo final de até 90 segundos.",
+      "Para o formato de Reels/Shorts, recomendamos que o bruto tenha até 3 minutos. Isso nos permite extrair o melhor conteúdo para um vídeo final de até 60 segundos.",
   },
 ];
 
