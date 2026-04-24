@@ -19,6 +19,13 @@ const testimonials = [
     result: "Triplicou o engajamento da banda nas redes",
     stars: 5,
   },
+  {
+    videoId: "ebOI5cEVsDY",
+    name: "Kelly Lemos",
+    brand: "Infoprodutora | Saúde",
+    result: "Escalou seu impacto ajudando milhares de pessoas a viver sem dor",
+    stars: 5,
+  },
 ];
 
 function Card({ t, index }: { t: (typeof testimonials)[0]; index: number }) {
@@ -165,7 +172,7 @@ export default function TestimonialsSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-2xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl">
           {testimonials.map((t, i) => (
             <Card key={i} t={t} index={i} />
           ))}
